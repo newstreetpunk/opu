@@ -75,6 +75,59 @@ h1, h2, h3, h4, h5, h6{
 	margin: 0 auto;
 	padding: 0 15px;
 }
+.mobile-btn{
+	width: 60px;
+	height: 60px;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	display: none;
+}
+.mobile-btn span{
+	width: 25px;
+	height: 2px;
+	background-color: #fff;
+	display: block;
+	margin: 3px auto;
+	-webkit-transform: rotate(0);
+	-ms-transform: rotate(0);
+	-o-transform: rotate(0);
+	transform: rotate(0);
+	opacity: 1;
+	-webkit-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+.mobile-btn.active span:first-child {
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+	position: relative;
+	top: 5px;
+}
+.mobile-btn.active span:nth-child(2) {
+	opacity: 0;
+	-webkit-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+.mobile-btn.active span:last-child {
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+	position: relative;
+	top: -5px;
+}
+
 
 /*HEADER*/
 .header{
