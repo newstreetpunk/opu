@@ -26,6 +26,12 @@
   font-style: normal;
 }
 
+*:before,
+*:after{
+	content: '';
+	display: block;
+	position: absolute;
+}
 
 html{font-size: 100%}
 ul, li{
@@ -97,6 +103,23 @@ h1, h2, h3, h4, h5, h6{
 	display: flex;
 	-ms-align-items: center;
 	align-items: center;
+}
+.menu ul li{
+	position: relative;
+}
+.menu ul li:after{
+	width: 0px;
+	height: 2px;
+	background-color: #ff9301;
+	left: 0;
+	bottom: -5px;
+	-webkit-transition: width .2s ease-in-out;
+	-o-transition: width .2s ease-in-out;
+	transition: width .2s ease-in-out;
+}
+.menu ul li.active:after,
+.menu ul li:hover:after{
+	width: 45px;
 }
 .menu ul li:not(:last-child){
 	margin-right: 80px;
