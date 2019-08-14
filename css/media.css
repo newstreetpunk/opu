@@ -8,3 +8,9 @@
 	.menu{display: none;}
 	.mobile-btn{display: block;}
 }
+
+@media screen and (max-width: 580px){
+	.phone img{
+		margin-right: 10px;
+	}
+}
