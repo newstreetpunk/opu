@@ -732,6 +732,68 @@ section h2:after{
 	left: 0;
 	top: 10px;
 }
+
+/*PORtFOLIO*/
+.portfolio__wrap{
+	background-image: url(../img/slider-bg.png);
+	min-height: 700px;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.portfolio__slider{
+	max-width: 900px;
+	width: 100%;
+	height: auto;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.slick-prev,
+.slick-next{
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	z-index: 1;
+	padding: 0;
+	margin: 0;
+	padding: 15px 10px;
+	padding-top: 16px;
+	border: none;
+	background-color: rgba(0,0,0,.4);
+	cursor: pointer;
+}
+.slick-prev{
+	left: 0;
+}
+.slick-next{
+	right: 0;
+}
+.slick-prev svg,
+.slick-next svg{
+	width: 15px;
+	height: 100%;
+	fill: #fff;
+}
+.slick-next svg{
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.slick-prev:hover svg,
+.slick-next:hover svg{
+	fill: #ff9301;
+}
+
+
+
+
 /*ABOUT*/
 .about{
 	background-image: url(../img/about-bg.jpg);
