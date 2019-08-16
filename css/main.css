@@ -98,7 +98,7 @@ h1, h2, h3, h4, h5, h6{
 	border-radius: 50%;
 	background-color: #ff9301;
 	position: absolute;
-	right: 0;
+	right: 2%;
 	top: 50%;
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
@@ -112,6 +112,7 @@ h1, h2, h3, h4, h5, h6{
 .menu-dubl-count li:hover a:after{
 	width: 25px;
 	height: 3px;
+	border-radius: 0;
 }
 .menu-dubl-count li.active a span,
 .menu-dubl-count li:hover a span{
@@ -274,6 +275,7 @@ h1, h2, h3, h4, h5, h6{
 	background-repeat: no-repeat;
 	color: #fff;
 	font-size: 20px;
+	text-align: left;
 }
 .intro .container{
 	height: 100%;
