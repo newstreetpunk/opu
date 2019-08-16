@@ -29,15 +29,15 @@
 
 </head>
 <body>
-	<header class="header" id="header">
+	<header= class="header" id="header">
 			<div class="container">
 				<nav class="menu">
 					<ul>
-						<li><a htef="#">Услуги</a></li>
-						<li><a htef="#">ОПУ</a></li>
-						<li class="active"><a htef="#">Портфолио</a></li>
-						<li><a htef="#">О компании</a></li>
-						<li><a htef="#">Контакты</a></li>
+						<li><a href="#services">Услуги</a></li>
+						<li><a href="#opu">ОПУ</a></li>
+						<li><a href="#portfolio">Портфолио</a></li>
+						<li><a href="#about">О компании</a></li>
+						<li><a href="#contacts">Контакты</a></li>
 					</ul>
 				</nav>
 				<div class="phone">
@@ -46,9 +46,19 @@
 				</div>
 				<button class="mobile-btn"><span></span><span></span><span></span></button>
 			</div>
-		</header>
+		</header=>
+		<nav class="menu-dubl-count">
+			<ul>
+				<li class="active"><a href="#intro"><span>01</span></a></li>
+				<li><a href="#services"><span>02</span></a></li>
+				<li><a href="#opu"><span>03</span></a></li>
+				<li><a href="#portfolio"><span>04</span></a></li>
+				<li><a href="#about"><span>05</span></a></li>
+				<li><a href="#contacts"><span>06</span></a></li>
+			</ul>
+		</nav>
 	<main>
-		<div class="intro">
+		<section class="intro" id="intro">
 			<div class="container">
 				<div class="intro__block">
 					<h1>Опорно-поворотные устройства для крановых установок и автовышек</h1>
@@ -80,7 +90,7 @@
 				</div>
 			</div>
 			<!-- /.container -->
-		</div>
+		</section>
 		<!-- /.intro -->
 
 		<section class="services" id="services">
@@ -287,7 +297,7 @@
 					</div>
 				</div>
 				<!-- /.opu__block -->
-				<a href="#" class="btn lg-btn">Оформить заказ</a>
+				<a href="#contacts" class="btn lg-btn">Оформить заказ</a>
 				<div class="text">
 					<h4>Эффект от применения</h4>
 					<p>Триботехнический концентрат содержит активный компонент, создающий условия, при которых на поверхностях трения в узлах формируется металлический защитный слой с особой структурой. Этот слой частично восстанавливает геометрию изношенных деталей, оптимизирует зазоры в парах трения, формирует микрорельеф, который лучше удерживает смазку.</p>
@@ -312,22 +322,6 @@
 			<!-- /.container -->
 		</section>
 		<!-- /.portfolio -->
-
-		<div id="page">
-
-    <div id="phoneCarousel">
-        <div class="previous arrow">Назад</div>
-        <div class="next arrow">Далее</div>
-
-       <div id="stage">
-            <img id="iphone" class="default" src="img/slide.jpg"/>
-            <img id="nexus" src="img/slide.jpg"/>
-            <img id="nokia" src="img/slide.jpg"/>
-            <img id="blackberry" src="img/slide.jpg"/>
-        </div>
-    </div>
-
-</div>
 
 		<section class="about" id="about">
 			<div class="container">
@@ -408,25 +402,26 @@
 			<!-- /.container -->
 		</section>
 		<!-- /#contacts.contacts -->
-
-
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-
 	</main>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-wrap">
+					<span class="copy">© SiteName 2019</span>
+					<a href="#" class="footer-policy">Политика конфиденциальности</a>
+				</div>
+				<!-- /.footer-wrap -->
+			</div>
+			<!-- /.container -->
+		</footer>
+		<!-- /.footer -->
 
 	
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-	<script	src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-	crossorigin="anonymous"></script>
+	<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
 	<script src="js/common.js"></script>
 </body>
 </html>

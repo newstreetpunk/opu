@@ -367,4 +367,14 @@
 	}
 	.contacts__info h2{font-size: 24px;}
 	.contacts__info--link{font-size: 16px;}
+	.footer-wrap{
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+	.footer-wrap a{
+		text-decoration: underline;
+	}
 }

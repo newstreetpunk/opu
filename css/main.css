@@ -69,6 +69,54 @@ h1, h2, h3, h4, h5, h6{
 	margin: 0 auto;
 	padding: 0 15px;
 }
+.menu-dubl-count{
+	position: fixed;
+	right: 20px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	z-index: 10;
+}
+.menu-dubl-count a{
+	color: #ff9301;
+	position: relative;
+	padding-right: 35px;
+}
+.menu-dubl-count a:hover{
+	text-decoration: none;
+}
+.menu-dubl-count a span{
+	opacity: 0;
+}
+.menu-dubl-count a:after{
+	content: '';
+	display: block;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: #ff9301;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	-webkit-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+}
+.menu-dubl-count li.active a:after,
+.menu-dubl-count li:hover a:after{
+	width: 25px;
+	height: 3px;
+}
+.menu-dubl-count li.active a span,
+.menu-dubl-count li:hover a span{
+	opacity: 1;
+}
 .mobile-btn{
 	width: 60px;
 	height: 60px;
@@ -858,81 +906,22 @@ section h2:after{
 .contacts__info--link a:hover{
 	text-decoration: none;
 }
-#phoneCarousel{
-    /*  This is the carousel section, it
-        contains the stage and the arrows */
-    height:390px;
-    margin:90px auto 120px;
-    position:relative;
-/*    width:800px;*/
+.footer{
+	background-color: #474747;
+	color: rgba(255,255,255,.4);
+	padding: 30px 0;
+}
+.footer a{
+	color: rgba(255,255,255,.4);
+}
+.footer-wrap{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
 }
 
-#phoneCarousel .arrow{
-    /* The two arrows */
-    width:44px;
-    height:44px;
-    background:url('img/arrows.png') no-repeat;
-    position:absolute;
-    top:50%;
-    margin-top:-22px;
-    left:0;
-    cursor:pointer;
-    z-index: 10000;
-}
-#page{
-    /* This the main container div */
-    width:1000px;
-    min-height:700px;
-    margin:0 auto;
-    background:url('img/bokeh.jpg') no-repeat 0 120px;
-    position:relative;
-    padding-top:1px;
-}
-
-#phoneCarousel .next{
-    /* Individual styles for the next icon */
-    background-position:right top;
-    left:auto;
-    right:0;
-}
-
-/* Hover styles */
-
-#phoneCarousel .arrow:hover{
-    background-position:left bottom;
-}
-
-#phoneCarousel .next:hover{
-    background-position:right bottom;
-}
-
-#stage{
-    /* The stage contains the animated phone images */
-    left:50%;
-    margin-left:-350px;
-    position:absolute;
-    width:700px;
-    height:100%;
-}
-
-#stage img{
-    /* Hiding all the images by default */
-    display:none;
-}
-
- #stage .default{
-      This class is applied only to the iphone img by default
-        and it is the only one visible if JS is disabled 
-    display:block;
-    left:50%;
-    margin-left:-135px;
-    position:absolute;
-} 
-
-#stage .animationReady{
-    /* This class is assigned to the images on load */
-    display:block;
-    position:absolute;
-    top:0;
-    left:0;
-}
