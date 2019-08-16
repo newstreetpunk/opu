@@ -26,6 +26,18 @@ jQuery(function($) {
 		
 	});
 
+	var scrolled;
+	window.onscroll = function() {
+		scrolled = window.pageYOffset || document.documentElement.scrollTop;
+		if(scrolled > 10){
+			$(".header").css({"background": "rgba(0,0,0,.8)"})
+		}
+		if(10 > scrolled){
+			$(".header").css({"background": "transparent"})         
+		}
+
+	}
+
 
 });
 

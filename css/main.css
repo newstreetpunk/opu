@@ -864,7 +864,7 @@ section h2:after{
     height:390px;
     margin:90px auto 120px;
     position:relative;
-    width:800px;
+/*    width:800px;*/
 }
 
 #phoneCarousel .arrow{
@@ -920,14 +920,14 @@ section h2:after{
     display:none;
 }
 
-#stage .default{
-    /*  This class is applied only to the iphone img by default
-        and it is the only one visible if JS is disabled */
+ #stage .default{
+      This class is applied only to the iphone img by default
+        and it is the only one visible if JS is disabled 
     display:block;
     left:50%;
     margin-left:-135px;
     position:absolute;
-}
+} 
 
 #stage .animationReady{
     /* This class is assigned to the images on load */
