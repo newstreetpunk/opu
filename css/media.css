@@ -258,9 +258,18 @@
 		-webkit-box-shadow: none;
 		box-shadow: none;
 	}
+	.portfolio__wrap{
+		background-image: none;
+		margin: 15vw 0;
+	}
 	.portfolio__slider{
 		max-width: 100%;
 		margin: 30px 0 0;
+	}
+	body{
+		-webkit-background-size: 100%;
+		background-size: 100%;
+		background-position: left bottom 85px;
 	}
 }
 
@@ -401,5 +410,11 @@
 	}
 	.footer-wrap a{
 		text-decoration: underline;
+	}
+	.opu .lg-btn{
+		padding: 15px 85px;
+	}
+	.portfolio__wrap{
+		margin: 10vw 0;
 	}
 }
