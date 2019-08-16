@@ -178,7 +178,7 @@ h1, h2, h3, h4, h5, h6{
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding: 40px 0;
+	padding: 20px 0;
 	background: transparent;
 	z-index: 100;
 }	
@@ -264,18 +264,19 @@ h1, h2, h3, h4, h5, h6{
 
 /*INTRO*/
 .intro{
-	min-height: 900px;
-	height: 100vh;
+	min-height: 650px;
+	height: auto;
 	width: 100%;
 	position: relative;
 	background-image: url(../img/intro-bg.jpg);
 	-webkit-background-size: cover;
 	background-size: cover;
-	background-position: center;
+	background-position: right bottom;
 	background-repeat: no-repeat;
 	color: #fff;
 	font-size: 20px;
 	text-align: left;
+	padding: 120px 0;
 }
 .intro .container{
 	height: 100%;
@@ -333,7 +334,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .intro-form form{
 	width: 100%;
-	padding: 30px 40px;
+	padding: 25px 40px;
 	background-color: #f2f2f2;
 	color: #000;
 	font-size: 16px;
@@ -345,7 +346,7 @@ h1, h2, h3, h4, h5, h6{
 	padding-left: 20px;
 }
 .intro-form form .form-group{
-	margin-bottom: 15px;
+	margin-bottom: 12px;
 }
 .intro-form form input,
 .intro-form form textarea{
@@ -737,9 +738,13 @@ section h2:after{
 .portfolio{
 	padding-bottom: 30px;
 }
+.portfolio h2{
+	margin-bottom: 5%;
+}
 .portfolio__wrap{
 	background-image: url(../img/slider-bg.png);
-	min-height: 54vw;
+	width: 100%;
+	min-height: 40vw;
 	height: auto;
 	-webkit-background-size: cover;
 	background-size: cover;
@@ -747,7 +752,7 @@ section h2:after{
 	position: relative;
 }
 .portfolio__slider{
-	max-width: 70vw;
+	max-width: 52vw;
 	width: 100%;
 	height: auto;
 	position: absolute;

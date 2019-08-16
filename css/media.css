@@ -4,6 +4,8 @@
 	}
 	.intro{
 		font-size: 16px;
+		padding: 90px 0;
+		background-position: right -100px bottom;	
 	}
 	.intro h1{
 		font-size: 35px;
@@ -58,6 +60,7 @@
 	}
 	.intro{
 		background-position: left center;
+		padding: 80px 0;
 	}
 	.intro h1{
 		font-size: 25px;
@@ -183,6 +186,13 @@
 	}
 	.intro__block{
 		margin-bottom: 30px;
+	}
+	.intro h1{
+		padding-bottom: 20px;
+		margin-bottom: 30px;
+	}
+	.intro h1, .intro__descr{
+		max-width: 100%;
 	}
 	.services__item-title{
 		width: 80%;
