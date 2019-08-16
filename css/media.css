@@ -40,9 +40,19 @@
 		font-size: 100px;
 		left: 50%;
 	}
+	.menu-dubl-count a{
+		font-size: 14px;
+		padding-right: 20px;
+	}
+	.menu-dubl-count li.active a:after, .menu-dubl-count li:hover a:after{
+		width: 15px;
+	}
 }
 
 @media screen and (max-width: 992px){
+	.menu-dubl-count{
+		display: none;
+	}
 	.menu ul li:not(:last-child){
 		margin-right: 40px;
 	}

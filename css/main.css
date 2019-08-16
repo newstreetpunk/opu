@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .menu-dubl-count{
 	position: fixed;
-	right: 20px;
+	right: 1vw;
 	top: 50%;
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
@@ -98,7 +98,7 @@ h1, h2, h3, h4, h5, h6{
 	border-radius: 50%;
 	background-color: #ff9301;
 	position: absolute;
-	right: 2%;
+	right: 0;
 	top: 50%;
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
@@ -747,7 +747,7 @@ section h2:after{
 	padding: 100px 0 70px;
 	width: 100%;
     height: 100%;
-    padding-right: 17px;
+    /*padding-right: 17px;*/
     box-sizing: content-box; 
 }
 /*.about .container{text-align: left;}*/

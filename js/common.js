@@ -16,7 +16,10 @@ jQuery(function($) {
 	$('.read-btn').on('click', function() {
 		if($(this).is(':contains("Подробнее")')){
 			$('.about__text--hidden').slideDown(300);
-			$('.about').css('overflow-y', 'scroll');
+			$('.about').css({
+				'overflow-y': 'scroll',
+				'padding-right': '17px'
+			});
 			$(this).text('Скрыть');
 		}else{
 			$(this).text('Подробнее');
