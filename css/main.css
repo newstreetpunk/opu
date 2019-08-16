@@ -49,6 +49,11 @@ body{
 	color: #000;
 	font-weight: normal;
 	background-color: #f5f5f5;
+	background-image: url(../img/shest.png);
+	-webkit-background-size: 40%;
+	background-size: 40%;
+	background-repeat: no-repeat;
+	background-position: left  180px bottom 70px;
 }
 	
 img{
@@ -712,7 +717,7 @@ section h2:after{
 	justify-content: space-between;
 }
 .opu__item--photo img{width: 30%;}
-.opu .lg-btn{margin-top: 40px; padding: 15px 70px;}
+.opu .lg-btn{margin-top: 40px; padding: 15px 150px;}
 .opu .text{
 	text-align: left;
 }
@@ -820,6 +825,7 @@ section h2:after{
     height: 100%;
     /*padding-right: 17px;*/
     box-sizing: content-box; 
+    z-index: 1;
 }
 /*.about .container{text-align: left;}*/
 .about h2{
@@ -916,7 +922,9 @@ section h2:after{
 	opacity: 0;
 }
 
-.contacts{}
+.contacts{
+	padding-top: 5px;
+}
 .contacts__block{
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -958,7 +966,7 @@ section h2:after{
 	top: auto;
 }
 .contacts__block{
-	margin-top: 100px;
+	margin-top: 130px;
 }
 .contacts__block .intro-form:after{
 	display: none;
