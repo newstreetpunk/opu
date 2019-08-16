@@ -734,16 +734,20 @@ section h2:after{
 }
 
 /*PORtFOLIO*/
+.portfolio{
+	padding-bottom: 30px;
+}
 .portfolio__wrap{
 	background-image: url(../img/slider-bg.png);
-	min-height: 700px;
+	min-height: 54vw;
+	height: auto;
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center;
 	position: relative;
 }
 .portfolio__slider{
-	max-width: 900px;
+	max-width: 70vw;
 	width: 100%;
 	height: auto;
 	position: absolute;
